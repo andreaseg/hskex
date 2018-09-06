@@ -16,7 +16,7 @@ for file in os.listdir("./"):
                     w.write("```" + m.group(1) + "\n")
                     for line in f:
                         w.write(line)
-                    w.write("```\n")
+                    w.write("\n```\n")
                     f.close()
                 else:
                     w.write("Missing file: " + m.group(2) + "\n")
